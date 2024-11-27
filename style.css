@@ -1,0 +1,23 @@
+
+header{
+    background-color: whitesmoke;
+}
+.nav-item a{
+    color: #141414;
+}
+#boton-perfil{
+   background-color: #4b87cf; 
+}
+.nav-item a:hover{
+    color: #4b87cf;
+}
+#app{
+    color: rgb(138, 34, 218);
+}
+.boton-casos-text{
+    color: black;
+}
+.btn-proyecto a{
+    text-decoration: none;
+   color: rgb(189, 201, 194);
+}
