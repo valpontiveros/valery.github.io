@@ -1,6 +1,17 @@
 
+*{
+    font-family: "Source Sans 3", sans-serif;
+}
+main{
+    background: rgb(214,180,252);
+background: linear-gradient(0deg, rgba(214,180,252,0.7511379551820728) 0%, rgba(211,221,231,0.8295693277310925) 37%, rgba(240,238,233,1) 75%);
+}
+
 header{
-    background-color: whitesmoke;
+    background-color: rgba(240,238,233,1);
+}
+.footer{
+    background-color:  rgba(55,39,135,0.6587009803921569) 0%;
 }
 .nav-item a{
     color: #141414;
