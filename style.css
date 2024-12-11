@@ -3,8 +3,8 @@
     font-family: "Source Sans 3", sans-serif;
 }
 main{
-    background: rgb(214,180,252);
-background: linear-gradient(0deg, rgba(214,180,252,0.7511379551820728) 0%, rgba(211,221,231,0.8295693277310925) 37%, rgba(240,238,233,1) 75%);
+    background: rgb(225,239,241);
+background: linear-gradient(0deg, rgba(225,239,241,1) 0%, rgba(240,238,233,1) 100%);
 }
 
 header{
@@ -16,19 +16,64 @@ header{
 .nav-item a{
     color: #141414;
 }
-#boton-perfil{
-   background-color: #4b87cf; 
+
+#boton-perfil:hover{
+    background-color: #17184b;
+    color: #d6b4fc;
 }
 .nav-item a:hover{
-    color: #4b87cf;
+    background-color: #17184b;
+    color: #d6b4fc;
+}
+.nav-link:hover{
+    color: #d6b4fc;
 }
 #app{
-    color: rgb(138, 34, 218);
+    color: #273287;
 }
-.boton-casos-text{
-    color: black;
+.boton-cv{
+    background-color: #273287;
+}
+.boton-cv:hover{
+    background-color: #17184b;
+    color: #d6b4fc;
+}
+.btn-proyecto{
+    background-color: #eef5f5;
 }
 .btn-proyecto a{
     text-decoration: none;
-   color: rgb(189, 201, 194);
+    color: rgb(49, 183, 105);
 }
+.container-hero{
+    background-color: #273287;
+}
+.div-footer{
+    background: rgb(39,50,135);
+    background: linear-gradient(0deg, rgba(39,50,135,1) 0%, rgba(225,239,241,1) 100%);  
+    color: #ffff;
+}
+.card .card-subtitle{
+    color: #17184b;
+}
+.card{
+    padding: 24px;
+}
+.btn-footer{
+    background-color: #273287;
+}
+.btn-footer:hover{
+    background-color: #17184b;
+    color: #d6b4fc;
+}
+.tecno-color{
+    color: #d6b4fc;
+}
+.icon-footer i{
+    font-size: 32px;
+    color: #ffff;
+}
+.icon-footer i:hover {
+    color: #d6b4fc; 
+  }
+  

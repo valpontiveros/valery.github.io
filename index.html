@@ -13,8 +13,8 @@
   <link rel="shortcut icon" href="assets/logoval.png" type="image/x-icon">
   <!--Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!--Link a hoja de estilos-->
   <link rel="stylesheet" href="style.css">
   <!--Nombre de la página-->
@@ -34,7 +34,7 @@
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item boton-perfil"><a id="boton-perfil" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item boton-perfil"><a id="boton-perfil" href="#hero" id="boton-perfil" class="nav-link" aria-current="page">Perfil</a></li>
         <li class="nav-item"><a href="#hanging-icons" class="nav-link">Habilidades</a></li>
         <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
         <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
@@ -46,7 +46,7 @@
     <main>
       <!--hero-->
       <div class="hero">
-        <div class="container my-5">
+        <div class="container my-5 hero-div">
           <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
               <!--h6#app-->
@@ -57,12 +57,16 @@
                 con los objetivos del proyecto.</p>
               <!--buttons-->
               <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                <button type="button" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold button-casos-text">Visualiza mi CV</button>
+                <button type="button" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold boton-cv">
+                  <a href="https://drive.google.com/file/d/1e-cjw0qhzOu0Vp-k5mm477gRu09pIxBB/view?usp=sharing" 
+                     class="text-decoration-none text-light">Visualiza mi CV</a>
+                </button>
               </div>
+              
 
             </div>
             <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-              <img class="rounded-circle" src="assets/FotoVal.jpeg" alt="" width="300">
+              <img class="rounded-3" src="assets/fotoval.jpg" alt="" width="410" height="580">
             </div>
           </div>
         </div>
@@ -145,11 +149,11 @@
       </div>
 
       <!--Proyectos-->
-      <div class="habilidades container px-4 py-5 proyectos container" id="proyectos">
+      <div class="proyectos container px-4 py-5 proyectos container" id="proyectos">
         <h2 class="pb-2 border-bottom">Proyectos</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="col d-flex align-items-start">
-            <div>
+          <div class="col d-flex align-items-start"></div>
+        </div>
 
               <div class="container">
 
@@ -157,21 +161,19 @@
                   <!--Card 1-->
                   <div class="col">
                     <div class="card shadow-sm">
-                      <img class="bd-placeholder-img" src="assets/Pinterest.png" alt="">
+                      <img class="bd-placeholder-img" src="assets/pinterest.png" alt="">
                       <div class="card-body">
                         <h5>Pinterest</h5>
                         <p class="card-text">
-                          Clon de la página web de Pinterest, proyecto realizado en el Bootcamp Tecnolochicas
+                          Clon de la página web de Pinterest, proyecto realizado en el Bootcamp Tecnolochicas.
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                           <!--Buttons-->
                           <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a
-                                target="_blank"
-                                href="https://vercel.com/valery-ontiveros-projects/pinterest-clon"></a>Visualizar</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a
-                                target="_blank" href="https://github.com/valpontiveros/pinterest-clon"></a>Ir a
-                              Github</button>
+                            <a target="_blank" href="https://pinterest-clon-zeta.vercel.app/" 
+                               class="btn btn-sm btn-outline-secondary btn-proyecto">Visualizar</a>
+                            <a target="_blank" href="https://github.com/valpontiveros/pinterest-clon" 
+                               class="btn btn-sm btn-outline-secondary btn-proyecto">Ir a Github</a>
                           </div>
                           <small class="text-body-secondary">Nov 2024</small>
                         </div>
@@ -183,7 +185,7 @@
                   <!--Card 2-->
                   <div class="col">
                     <div class="card shadow-sm">
-                      <img class="bd-placeholder-img" src="assets/Pinterest.png" alt="">
+                      <img class="bd-placeholder-img" src="assets/overthegarden.png" alt="">
                       <div class="card-body">
                         <h5>Mi primer sitio web</h5>
                         <p class="card-text">
@@ -192,12 +194,10 @@
                         <div class="d-flex justify-content-between align-items-center">
                           <!--Buttons-->
                           <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a
-                                target="_blank"
-                                href="https://vercel.com/valery-ontiveros-projects/pinterest-clon"></a>Visualizar</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a
-                                target="_blank" href="https://github.com/valpontiveros/pinterest-clon"></a>Ir a
-                              Github</button>
+                            <a target="_blank" href="https://over-the-garden-wall.vercel.app/" 
+                               class="btn btn-sm btn-outline-secondary btn-proyecto">Visualizar</a>
+                            <a target="_blank" href="https://github.com/valpontiveros/Over-the-Garden-Wall" 
+                               class="btn btn-sm btn-outline-secondary btn-proyecto">Ir a Github</a>
                           </div>
                           <small class="text-body-secondary">Nov 2024</small>
                         </div>
@@ -209,21 +209,19 @@
                   <!--Card 3-->
                   <div class="col">
                     <div class="card shadow-sm">
-                      <img class="bd-placeholder-img" src="assets/Pinterest.png" alt="">
+                      <img class="bd-placeholder-img" src="assets/tareasporhacer.png" alt="">
                       <div class="card-body">
-                        <h5>Pinterest</h5>
+                        <h5>Tareas por hacer</h5>
                         <p class="card-text">
-                          Clon de la página web de Pinterest, proyecto realizado en el Bootcamp Tecnolochicas
+                          Página web que permite ver colocar tareas pendientes y eliminar las realizadas.
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                           <!--Buttons-->
                           <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a
-                                target="_blank"
-                                href="https://vercel.com/valery-ontiveros-projects/pinterest-clon"></a>Visualizar</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a
-                                target="_blank" href="https://github.com/valpontiveros/pinterest-clon"></a>Ir a
-                              Github</button>
+                            <a target="_blank" href="https://tareas-theta.vercel.app/" 
+                               class="btn btn-sm btn-outline-secondary btn-proyecto">Visualizar</a>
+                            <a target="_blank" href="https://github.com/valpontiveros/Tareas" 
+                               class="btn btn-sm btn-outline-secondary btn-proyecto">Ir a Github</a>
                           </div>
                           <small class="text-body-secondary">Nov 2024</small>
                         </div>
@@ -233,6 +231,7 @@
                   <!--Fin card-->
                 </div>
               </div>
+      </div>   
 
 
 
@@ -240,82 +239,64 @@
               <!--Carrusel AUTOPLAYING-->
               <div id="testimonios" class="testimonios">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="testimonios container px-4 py-5" id="hanging-icons">
+                    <h2 class="pb-2 border-bottom">Testimonios</h2>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3"></div>
+                      <div class="col d-flex align-items-start"></div>
+                  </div>
                   <div class="carousel-inner">
-
-                    <div class="habilidades container px-4 py-5" id="hanging-icons">
-                      <h2 class="pb-2 border-bottom">Testimonios</h2>
-                      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                        <div class="col d-flex align-items-start">
-                        </div>
-
+                      <!--Inicio item-->
                         <div class="carousel-item active">
                           <div class="d-flex justify-content-center">
                             <!--1era Card-->
-                            <div class="card" style="width: 18rem;">
-                              <img src="assets/user_icon_001.jpg" class="card-img-top rounded-circle" alt="...">
+                            <div class="card border-0 " style="width: 18rem;">
+                              <img src="assets/itzelgarcia.png" class="card-img-top rounded-circle" alt="...">
                               <div class="card-body">
-                                <h5 class="card title">Card title</h5>
-                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                  bulk of the card's content.</p>
+                                <h4 class="card-subtitle text center mb-2">Itzel García Noriega</h4>
+                                <h6 class="card-subtitle text center mb-2 text-body-secondary">Diseñadora UX/UI</h6>
+                                <p class="card-text text center"> Valery siempre ha demostrado responsabilidad y convicción en todos los proyectos en los que participa además de tener cualidades para la investigación en experiencia del usuario, gestión de proyectos, generación de soluciones y diseño de interfaz del usuario.</p>
                               </div>
                             </div>
                             <!--Fin card-->
                           </div>
                         </div>
-
-                        <!-- item -->
-                        <div class="carousel-item active">
-                          <div class="d-flex justify-content-center">
-                            <!-- card -->
-                            <div class="card" style="width: 18rem;">
-                              <img src="assets/user_icon_001.jpg" class="card-img-top rounded-circle"
-                                alt="imagen de testimonio">
-                              <h5 class="card-title">Card title</h5>
-                              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                  bulk of the card's content.</p>
-                              </div>
-                            </div>
-                            <!-- fin card -->
-                          </div>
-                        </div>
-                      </div>
+                      <!--Fin item-->
 
 
+                      <!--Inicio item-->
                       <div class="carousel-item">
                         <div class="d-flex justify-content-center">
-                          <!--2da card-->
-                          <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                          <!--2da Card-->
+                          <div class="card border-0" style="width: 18rem;">
+                            <img src="assets/anelmontes.png" class="card-img-top rounded-circle" alt="...">
                             <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
+                              <h4 class="card-subtitle mb-2">Anel Montes</h4>
+                              <h6 class="card-subtitle mb-2 text-body-secondary">Mentora de Tecnolochicas</h6>
+                              <p class="card-text"> Valery muestra un rápido progreso en la adquisición de habilidades técnicas clave y una gran disposición para colaborar en proyectos. Su actitud positiva y su voluntad de aprender constantemente son cualidades valiosas en el campo de la programación. No tengo dudas de que seguirá creciendo y haciendo contribuciones significativas como desarrolladora frontend en el futuro.</p>
                             </div>
                           </div>
-                          <!--Fin de card-->
+                          <!--Fin card-->
                         </div>
                       </div>
+                    <!--Fin item-->
 
-
+                      <!--Inicio item-->
                       <div class="carousel-item">
                         <div class="d-flex justify-content-center">
-                          <!--3er card-->
-                          <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                          <!--3er Card-->
+                          <div class="card border-0" style="width: 18rem;">
+                            <img src="assets/patricia-jimenez.png" class="card-img-top rounded-circle" alt="...">
                             <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
+                              <h4 class="card-subtitle text center mb-2">Patricia Jiménez</h4>
+                              <h6 class="card-subtitle text center mb-2 text-body-secondary">Product Designer</h6>
+                              <p class="card-text"> Valery es una increíble diseñadora, muy creativa y con una capacidad enorme de gestión y liderazgo de proyectos. 
+                                Tuvimos la oportunidad de trabajar juntas en un proyecto de diseño colaborativo que fue finalista en el premio nacional de diseño Diseña MX 2020 y mi experiencia trabajando con ella fue enriquecedora y de mucho crecimiento profesional.</p>
                             </div>
                           </div>
-                          <!--Fin de card-->
+                          <!--Fin card-->
                         </div>
                       </div>
-
+                    <!--Fin item-->
 
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                         data-bs-slide="prev">
@@ -329,31 +310,33 @@
                       </button>
                     </div>
                   </div>
+              </div> 
 
 <!--HERO CONTACTO-->
-                  <div id="contacto" class="px-4 py-5 my-5 text-center">
+                <div class="p-4">
+                  <div id="contacto" class="px-4 py-5 text-center">
                     <i class="d-block mx-auto mb-4 fs-1 bi-chat-square-dots"></i>
                     <h1 class="display-5 fw-bold text-body-emphasis">¡Trabajemos juntos!</h1>
                     <div class="col-lg-6 mx-auto">
                       <p class="lead mb-4">Estoy disponible para nuevos proyectos. No dudes en contactarme para buscar soluciones juntos. </p>
                       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                         <a href="mailto:valontiveros99@gmail.com">
-                        <button type="button" class="btn btn-dark btn-lg px-4 gap-3">Envíame un correo</button>
+                        <button type="button" class="btn btn-dark btn-lg px-4 gap-3 btn-footer">Envíame un correo</button>
                         </a>
                       </div>
                     </div>
                   </div>
+                </div>
     </main>
-
 <!--FOOTER-->
-    <footer class="py-3 my-4 footer">
+    <footer class="py-3 mb-0 div-footer">
       <p class="text-center text-body-primary">Otras maneras de contactarme</p>
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="https://www.linkedin.com/in/valery-ontiveros/" class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin"></i></a></li>
-        <li class="nav-item"><a href="https://github.com/valpontiveros?tab=repositories" class="nav-link px-2 text-body-secondary"><i class="bi bi-github"></i></a></li>
-        <li class="nav-item"><a href="https://www.behance.net/valeryontiveros" class="nav-link px-2 text-body-secondary"><i class="bi bi-behance"></i></a></li>
+        <li class="icon-footer"><a href="https://www.linkedin.com/in/valery-ontiveros/" class="nav-link px-2 "><i class="bi bi-linkedin"></i></a></li>
+        <li class="icon-footer"><a href="https://github.com/valpontiveros?tab=repositories" class="nav-link px-2 "><i class="bi bi-github"></i></a></li>
+        <li class="icon-footer"><a href="https://www.behance.net/valeryontiveros" class="nav-link px-2 "><i class="bi bi-behance"></i></a></li>
       </ul>
-      <p class="text-center text-body-secondary">Creado por Valery Ontiveros en el Bootcamp de <a href="https://tecnolochicas.mx/">Tecnolochicas Pro</a></p>
+      <p class="text-center">Creado por Valery Ontiveros en el Bootcamp de <a class="tecno-color" href="https://tecnolochicas.mx/">Tecnolochicas Pro</a></p>
     </footer>
 
 
